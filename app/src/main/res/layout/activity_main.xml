@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:scaleType="fitStart" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_run_custom_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO!"
+        android:textColor="@color/colorAccent" />
+
+    <com.google.firebase.codelab.mlkit.DoodleView
+        android:id="@+id/doodleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineAmbientShadowColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>

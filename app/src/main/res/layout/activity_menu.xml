@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/choiceQuestion"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/carButton"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="carButtonOnClick"
+        app:srcCompat="@drawable/car" />
+
+    <ImageButton
+        android:id="@+id/birdButton"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="birdButtonOnClick"
+        app:srcCompat="@drawable/bird" />
+
+</LinearLayout>
